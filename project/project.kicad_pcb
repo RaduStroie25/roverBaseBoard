@@ -6405,7 +6405,7 @@
 				(xyz -90 0 -180)
 			)
 		)
-		(model "${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x06_P2.54mm_Vertical.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x06_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 12.7 0)
 			)
