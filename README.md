@@ -1,5 +1,7 @@
 # roverBaseBoard
 My Rover Project, too lazy to write another description. View documentation in the files. :P
+STATUS: Unfinished
+
 ### Board Pins (Input)
 These are the board pins that take input from the Microcontroller:
 - 8x Digital pins. (for all motor driver direction control)
