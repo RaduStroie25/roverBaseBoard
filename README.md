@@ -18,5 +18,5 @@ These are the pins that the board offers to a microcontroller:
 
 
 ## Notes
-- Measured TT motor max draw per motor 110mA-120mA.
+- Measured TT motor max draw per motor 110mA-120mA. (without load or wheels on)
 - do not run 75A through jumper cables... *
