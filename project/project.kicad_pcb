@@ -731,7 +731,6 @@
 			)
 		)
 		(property ki_fp_filters "TO?220*")
-		(path "/d06c15a8-e8c2-4e42-acbf-d196423e7f1c")
 		(sheetname "/")
 		(sheetfile "project.kicad_sch")
 		(units
@@ -927,7 +926,7 @@
 		(at 75.85 185.5)
 		(descr "Resistor, Axial_DIN0309 series, Axial, Horizontal, pin pitch=12.7mm, 0.5W = 1/2W, length*diameter=9*3.2mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0309 series Axial Horizontal pin pitch 12.7mm 0.5W = 1/2W length 9mm diameter 3.2mm")
-		(property "Reference" "10k"
+		(property "Reference" "R1"
 			(at 6.35 0 0)
 			(layer "F.SilkS")
 			(uuid "35fbaae9-7d08-40a1-a7d8-c96e6fd65796")
@@ -4476,7 +4475,7 @@
 		(layer "F.Cu")
 		(uuid "6f4068a9-07a1-4379-9ea8-06d941574871")
 		(at 60.501 147.014 90)
-		(property "Reference" "StepDown_6V1"
+		(property "Reference" "StepDown_1"
 			(at -18.325 -11.635 90)
 			(layer "F.SilkS")
 			(uuid "ffe1c2b4-2c13-4ef7-9c54-fdbdcf29edf1")
@@ -4894,7 +4893,7 @@
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(StepDown_6V1-MOUTING-PadMH1)")
+			(net "unconnected-(StepDown_1-MOUTING-PadMH1)")
 			(pinfunction "MOUTING_MH1")
 			(pintype "passive+no_connect")
 			(solder_mask_margin 0.102)
@@ -4906,7 +4905,7 @@
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(StepDown_6V1-MOUTING-PadMH1)_1")
+			(net "unconnected-(StepDown_1-MOUTING-PadMH1)_1")
 			(pinfunction "MOUTING_MH2")
 			(pintype "passive+no_connect")
 			(solder_mask_margin 0.102)
@@ -5495,7 +5494,7 @@
 		(at 87.35 173 180)
 		(descr "Resistor, Axial_DIN0309 series, Axial, Horizontal, pin pitch=12.7mm, 0.5W = 1/2W, length*diameter=9*3.2mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0309 series Axial Horizontal pin pitch 12.7mm 0.5W = 1/2W length 9mm diameter 3.2mm")
-		(property "Reference" "10k"
+		(property "Reference" "R2"
 			(at 6.35 0 0)
 			(layer "F.SilkS")
 			(uuid "3cb6b1b7-2db4-4033-be6f-9413eca416e8")
@@ -7758,7 +7757,7 @@
 		(layer "F.Cu")
 		(uuid "f97ba620-b762-47da-8f1b-40b8117bc070")
 		(at 64.92 56.1)
-		(property "Reference" "StepDown_5V1"
+		(property "Reference" "StepDown_2"
 			(at 0 -1.5 0)
 			(layer "F.SilkS")
 			(uuid "d0947a06-269f-4e1e-b49f-1868c12ee387")
@@ -8152,7 +8151,7 @@
 			(drill 1.524)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "Net-(U1-VIN-)")
+			(net "Net-(Q1-S)")
 			(pinfunction "IN+_IN+")
 			(pintype "input")
 			(solder_mask_margin 0.102)
@@ -8202,7 +8201,7 @@
 		(at 63 173.3 -90)
 		(descr "Resistor, Axial_DIN0309 series, Axial, Horizontal, pin pitch=12.7mm, 0.5W = 1/2W, length*diameter=9*3.2mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0309 series Axial Horizontal pin pitch 12.7mm 0.5W = 1/2W length 9mm diameter 3.2mm")
-		(property "Reference" "4.7k"
+		(property "Reference" "R3"
 			(at 6.35 0 90)
 			(layer "F.SilkS")
 			(uuid "98aa9786-a9af-4c80-8aab-5175cbe86697")
