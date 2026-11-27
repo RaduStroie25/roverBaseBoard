@@ -5,9 +5,8 @@
 	(uuid "6f35aacc-f728-4188-ade4-37cfc3d48477")
 	(paper "A3")
 	(lib_symbols
-		(symbol "Conn_01x02_Pin_1"
+		(symbol "Connector:Barrel_Jack_Switch"
 			(pin_names
-				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -15,30 +14,28 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J5"
-				(at -0.6351 1.27 90)
+			(property "Reference" "J"
+				(at 0 5.334 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "12V"
-				(at 1.9049 1.27 90)
+			(property "Value" "Barrel_Jack_Switch"
+				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "SparkFun-Connectors:DEANS"
-				(at 0 0 0)
+			(property "Footprint" ""
+				(at 1.27 -1.016 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -49,6 +46,17 @@
 				)
 			)
 			(property "Datasheet" ""
+				(at 1.27 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "DC Barrel Jack with an internal switch"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -59,7 +67,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
+			(property "ki_keywords" "DC power barrel jack connector"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -70,17 +78,7 @@
 					)
 				)
 			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
+			(property "ki_fp_filters" "BarrelJack*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -91,34 +89,48 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x02_Pin_1_1_1"
+			(symbol "Barrel_Jack_Switch_0_1"
 				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
+					(start -5.08 3.81)
+					(end 5.08 -3.81)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type background)
 					)
 				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
+				(polyline
+					(pts
+						(xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)
+					)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.302 1.905)
+					(mid -3.9343 2.54)
+					(end -3.302 3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.302 1.905)
+					(mid -3.9343 2.54)
+					(end -3.302 3.175)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -127,10 +139,33 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy 0.8636 0)
+						(xy 1.27 -2.286) (xy 1.905 -1.651)
 					)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.683 3.175)
+					(end -3.302 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 3.81 2.54)
+					)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -139,27 +174,29 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+						(xy 5.08 0) (xy 1.27 0) (xy 1.27 -2.286) (xy 0.635 -1.651)
 					)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
+			)
+			(symbol "Barrel_Jack_Switch_1_1"
 				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "Pin_1"
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "+"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -168,16 +205,34 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 3.81)
-					(name "Pin_2"
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "-"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3747,6 +3802,12 @@
 		(uuid "1296b074-265d-4e85-b0f2-ee2cdd86a13e")
 	)
 	(junction
+		(at 201.93 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "23b4f367-3a4d-4e44-bb52-535bb39e09cb")
+	)
+	(junction
 		(at 149.86 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3757,12 +3818,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "703c9c2b-6269-4ac6-b49d-486ef4e04e19")
-	)
-	(junction
-		(at 204.47 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "78ace24a-a8d3-4bc4-95ba-796e49b82dcc")
 	)
 	(junction
 		(at 191.77 250.19)
@@ -3823,6 +3878,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e40aa3f3-3c21-4462-9cf8-e1b5502b6b3a")
+	)
+	(junction
+		(at 222.25 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f0a13bc0-6baa-440e-97e5-9e7720fe06aa")
 	)
 	(junction
 		(at 204.47 74.93)
@@ -3960,6 +4021,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 140.97) (xy 233.68 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "319f29bc-3752-4ec8-b72b-405c8e4bf408")
+	)
+	(wire
+		(pts
 			(xy 144.78 161.29) (xy 149.86 161.29)
 		)
 		(stroke
@@ -4040,16 +4111,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 104.14) (xy 204.47 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3aff0593-2a59-4918-acc1-f46063149c76")
-	)
-	(wire
-		(pts
 			(xy 134.62 228.6) (xy 144.78 228.6)
 		)
 		(stroke
@@ -4100,7 +4161,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 124.46) (xy 222.25 147.32)
+			(xy 222.25 124.46) (xy 222.25 140.97)
 		)
 		(stroke
 			(width 0)
@@ -4180,7 +4241,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 67.31) (xy 204.47 74.93)
+			(xy 204.47 59.69) (xy 204.47 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4390,6 +4451,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 140.97) (xy 222.25 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "777abf3b-1aa9-48e8-a138-4cddfa2ec674")
+	)
+	(wire
+		(pts
 			(xy 140.97 248.92) (xy 140.97 250.19)
 		)
 		(stroke
@@ -4437,6 +4508,16 @@
 			(type default)
 		)
 		(uuid "7a7cc406-902b-4038-9220-ea91c5f2ac5a")
+	)
+	(wire
+		(pts
+			(xy 201.93 59.69) (xy 201.93 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cbce50a-f587-4acf-9a0c-c32ffefc47a3")
 	)
 	(wire
 		(pts
@@ -4740,6 +4821,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 140.97) (xy 233.68 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c119940f-022a-4d1e-b1ff-a989e9f1406a")
+	)
+	(wire
+		(pts
 			(xy 140.97 250.19) (xy 140.97 252.73)
 		)
 		(stroke
@@ -4790,16 +4881,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 86.36) (xy 204.47 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c71e456f-da7c-4ae3-9820-7b364ff5347d")
-	)
-	(wire
-		(pts
 			(xy 73.66 220.98) (xy 73.66 213.36)
 		)
 		(stroke
@@ -4847,16 +4928,6 @@
 			(type default)
 		)
 		(uuid "cdec29e1-24c0-4737-936e-47a13522fa96")
-	)
-	(wire
-		(pts
-			(xy 233.68 104.14) (xy 233.68 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0d9fef8-0a63-485f-9703-5e39cdda5093")
 	)
 	(wire
 		(pts
@@ -4930,6 +5001,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 59.69) (xy 201.93 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecc9664b-7682-4d89-b546-7cd6a010775a")
+	)
+	(wire
+		(pts
 			(xy 146.05 252.73) (xy 144.78 252.73)
 		)
 		(stroke
@@ -4980,7 +5061,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 104.14) (xy 204.47 121.92)
+			(xy 204.47 86.36) (xy 204.47 121.92)
 		)
 		(stroke
 			(width 0)
@@ -5313,6 +5394,91 @@
 			(project "project"
 				(path "/6f35aacc-f728-4188-ade4-37cfc3d48477"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Barrel_Jack_Switch")
+		(at 201.93 52.07 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05c2bc8a-79f5-4b6a-9a89-239585a6ff54")
+		(property "Reference" "J4"
+			(at 207.01 50.7999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Barrel_Jack_Switch"
+			(at 207.01 53.3399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal"
+			(at 200.914 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.914 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "DC Barrel Jack with an internal switch"
+			(at 201.93 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "4dfe4208-a99b-4832-9575-a772454316ef")
+		)
+		(pin "2"
+			(uuid "e0e57523-1e2c-4513-947a-fda196a390e6")
+		)
+		(pin "1"
+			(uuid "7cc0f216-5420-412b-9b41-077ec479e4a0")
+		)
+		(instances
+			(project "project"
+				(path "/6f35aacc-f728-4188-ade4-37cfc3d48477"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -6372,7 +6538,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 201.93 67.31 0)
+		(at 201.93 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6380,10 +6546,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4809b50b-5168-40c3-9e8e-00cc0ad0ff3b")
 		(property "Reference" "#PWR04"
-			(at 201.93 73.66 0)
+			(at 201.93 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6394,7 +6559,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 201.93 72.39 0)
+			(at 201.422 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6404,7 +6569,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 201.93 67.31 0)
+			(at 201.93 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6415,7 +6580,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 67.31 0)
+			(at 201.93 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6426,7 +6591,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 201.93 67.31 0)
+			(at 201.93 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7673,259 +7838,6 @@
 		)
 	)
 	(symbol
-		(lib_id "MC00100:MC00100")
-		(at 228.6 171.45 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9964766e-d38a-4ab8-94a5-ec4cbc3ef990")
-		(property "Reference" "StepDown_2"
-			(at 237.49 170.1799 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "WenQuanYi Zen Hei")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "XL4015_Module"
-			(at 237.49 172.7199 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MC00100:XL4015_StepDown_Module"
-			(at 228.6 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" ""
-			(at 228.6 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "DC-DC LM2596 Step Down Adjustable Converter Power Supply Module 1.3V-35V"
-			(at 228.6 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MF" "YKS"
-			(at 228.6 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "14.00mm"
-			(at 228.6 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "CREATOR" "ASHISH"
-			(at 228.6 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Price" "None"
-			(at 228.6 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "None"
-			(at 228.6 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/MC00100/YKS/view-part/?ref=eda"
-			(at 228.6 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 228.6 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "PARTREV" "NA"
-			(at 228.6 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "VERIFIER" ""
-			(at 228.6 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/MC00100/YKS/view-part/?ref=snap"
-			(at 228.6 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MP" "MC00100"
-			(at 228.6 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Availability" "Not in stock"
-			(at 228.6 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "YKS"
-			(at 228.6 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(pin "OUT-"
-			(uuid "93353e58-13d5-452d-ac2c-15321b107eb8")
-		)
-		(pin "OUT+"
-			(uuid "4773bebb-0099-4896-a740-51b27aa40bbe")
-		)
-		(pin "MH2"
-			(uuid "f0b61991-9326-4b04-8c7e-171196555add")
-		)
-		(pin "MH1"
-			(uuid "f0d45f37-75f7-47a6-923f-1d98a7a9f402")
-		)
-		(pin "IN-"
-			(uuid "37acb6c6-55e1-4fec-bf0a-53bf30cf2549")
-		)
-		(pin "IN+"
-			(uuid "6431f2b8-ae21-4d79-a6e3-bb6bdafd4a62")
-		)
-		(instances
-			(project "project"
-				(path "/6f35aacc-f728-4188-ade4-37cfc3d48477"
-					(reference "StepDown_2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 138.43 168.91 0)
 		(unit 1)
@@ -8241,89 +8153,6 @@
 			(project "project"
 				(path "/6f35aacc-f728-4188-ade4-37cfc3d48477"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "Conn_01x02_Pin_1")
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 204.47 62.23 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "abd9cd88-cb8f-4de3-b77b-05497a2f23be")
-		(property "Reference" "J5"
-			(at 205.74 61.5949 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "12V"
-			(at 205.74 64.1349 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SparkFun-Connectors:DEANS"
-			(at 204.47 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 204.47 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "-"
-			(uuid "c6ffc5d4-d2f6-48b3-b79a-4e871b1bb21c")
-		)
-		(pin "+"
-			(uuid "2477c50d-a495-41d0-9f31-79ec8c5112f8")
-		)
-		(instances
-			(project "project"
-				(path "/6f35aacc-f728-4188-ade4-37cfc3d48477"
-					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -8846,6 +8675,258 @@
 			(project "project"
 				(path "/6f35aacc-f728-4188-ade4-37cfc3d48477"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MC00100:MC00100")
+		(at 228.6 171.45 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d6d4c46d-5846-41cb-b2dc-04a0444ff578")
+		(property "Reference" "StepDown_2"
+			(at 237.49 170.1799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LM2596_Module"
+			(at 237.49 172.7199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MC00100:CONV_MC00100"
+			(at 228.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "DC-DC LM2596 Step Down Adjustable Converter Power Supply Module 1.3V-35V"
+			(at 228.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "YKS"
+			(at 228.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "14.00mm"
+			(at 228.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "CREATOR" "ASHISH"
+			(at 228.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 228.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "None"
+			(at 228.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/MC00100/YKS/view-part/?ref=eda"
+			(at 228.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 228.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "NA"
+			(at 228.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "VERIFIER" ""
+			(at 228.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/MC00100/YKS/view-part/?ref=snap"
+			(at 228.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "MC00100"
+			(at 228.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 228.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "YKS"
+			(at 228.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "OUT-"
+			(uuid "0ea2fd2e-3ce3-4aab-99ab-ae8d52a67da6")
+		)
+		(pin "OUT+"
+			(uuid "62d1ae76-d061-4bd0-b505-b0db95dd8158")
+		)
+		(pin "MH2"
+			(uuid "1cd806d4-a85d-4b18-bd12-c9bfa244f49a")
+		)
+		(pin "MH1"
+			(uuid "4924f301-d619-46a1-811f-be0cd0bf787f")
+		)
+		(pin "IN-"
+			(uuid "6724ff79-6b11-4e06-8895-4bc4ca892a10")
+		)
+		(pin "IN+"
+			(uuid "37ff91e3-4221-4666-9248-3824a1d51d29")
+		)
+		(instances
+			(project "project"
+				(path "/6f35aacc-f728-4188-ade4-37cfc3d48477"
+					(reference "StepDown_2")
 					(unit 1)
 				)
 			)

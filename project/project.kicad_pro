@@ -488,7 +488,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "Connector_BarrelJack"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {
@@ -665,7 +667,7 @@
         "uuid": "6f35aacc-f728-4188-ade4-37cfc3d48477"
       }
     ],
-    "used_designators": "#PWR1-15,C1-7,J1-6,OPM1-2,PS1,Q1-2,R1-3,SW1-2,StepDown_5V1,StepDown_6V1,U1-2",
+    "used_designators": "#PWR1-15,C1-7,J1-6,OPM1-2,PS1,Q1-2,R1-3,SW1-2,StepDown_2,StepDown_5V1,StepDown_6V1,U1-2",
     "variants": []
   },
   "sheets": [
